@@ -9,9 +9,8 @@ namespace Domain
     public class Cachorro : Animal
     {
         public string Nome { get; set; }
-        //public string Especie { get; set; }
 
-        public Cachorro(string nome, string especie, string somEmite) : base(especie, somEmite)
+        public Cachorro(string nome, string especie, string somEmite, string horaDeDormir, string alimentacao) : base(especie, somEmite, horaDeDormir, alimentacao)
         {
             Nome = nome;
         }
@@ -23,6 +22,16 @@ namespace Domain
         public override string FazerSom(string somEmite)
         {
             return base.FazerSom(somEmite);
+        }
+
+        public override string Dormir(string horaDeDormir, string nome)
+        {
+            return base.Dormir(horaDeDormir, nome);
+        }
+
+        public override string AlimentarAnimal(string alimentacao, string nome)
+        {
+            return base.AlimentarAnimal(alimentacao, nome);
         }
     }
 }
