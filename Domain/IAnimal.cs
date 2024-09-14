@@ -12,6 +12,7 @@
         string FazerSom(string somEmite);
         string Dormir(string dormir, string nome);
         string AlimentarAnimal(string alimentacao, string nome);
+        string Crescer();
 
     }
 }
